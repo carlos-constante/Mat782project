@@ -58,8 +58,19 @@ par(mar = c(15, 4, 4, 4),
     xpd = TRUE) ## Creating space for text at the bottom of the graph
 barplot(table(DC$`Race Ethnicity`),
         main = "Frequency Distribution of Death by Race / Ethnicity",
-        xlab = "Race / Ethnicity",
+        xlab = "",
         las = 2,
         ylab = "Frequency",
+        col.axis = "blue",
+        col.lab = "purple",
+        font.lab = 2,
         col = "lightblue")
+text(x = 4.2,
+     y = par("usr")[3]-5,
+     adj = 0.9,
+     xpd = TRUE,
+     labels = c("Race / Ethnicity"),
+     col = "purple",
+     font = 2
+     )
 
